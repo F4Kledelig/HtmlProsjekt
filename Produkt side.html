@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-color: orange; /* Set the background color to orange */
+                height: 100vh; /* Make the body cover the entire viewport height */
+                display: flex;
+                flex-direction: column; /* Stack children vertically */
+                justify-content: flex-start; /* Start stacking from the top */
+            }
+            header {
+                text-align: center;
+                padding: 10px;
+                position: relative;
+            }
+            header h1 {
+                font-size: 110px;
+            }
+            #RightSide {
+                display: flex;
+                margin-right: 20px;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            .white-box {
+                display: flex; /* Grå boks for søkefeltet. bare for å vise */
+                justify-content: center; 
+                align-items: center; 
+                background-color: rgb(168, 166, 166);
+                border: 1px solid black;
+                width: 100px;
+                height: 35px;
+            }
+            .header-linje {
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                background-color:black;
+                bottom: 0;
+                left: 0;
+            }
+            .kles-bildebokser {
+                display: flex;
+                justify-content:space-between;
+                align-items:center;
+                width:20%;
+                flex-direction:column;
+                margin: 4px;
+                padding: 5px;
+                background-color: rgb(170, 170, 170);
+                border: 1px solid black;
+            }
+                .kles-bildebokser2 {
+                display: flex;
+                justify-content:space-between;
+                align-items:center;
+                width:20%;
+                flex-direction:column;
+                margin: 4px;
+                padding: 5px;
+                background-color: rgb(170, 170, 170);
+                border: 1px solid black;
+            }
+            .kles-bildebokser img{
+                max-width: 95%;
+                height: auto;  /* for å beholde aspect ration til originalen */
+            }
+            .kles-bildebokser p {
+                font-size: 16px;
+                margin: 0;
+            }
+            .hjem-logo {
+                position: relative;
+            }
+            .gretten-kode {
+                position:absolute;
+                margin-top: -300px;
+            }
+            .rightB1 {
+                position:absolute;
+                margin-top: 10px;
+                margin-right: 20px;
+                justify-content: flex-end;
+            }
+            .rightB2 {
+                position:absolute;
+                margin-top: 10px;
+                margin-left: 20px;
+                justify-content: flex-end;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+                <div class="header-linje"></div>        <!--En svart linje bare for å skille øvre og nedre del a siden-->
+                <h1><strong>Produkter</strong></h1>
+                <div class="hjem-logo"> <img src="Assets/kledelif4.png" width="70" height="70"></div> <!--hjem logo som en kan trykke på for å komme seg til forsiden-->
+                <div id="RightSide">
+                    <div class="white-box">
+                    <h3>Search field</h3>       <!-- (skulle egentlig stå Søkefelt) Av en eller annen grunn skjedde noe som gjorde at jeg ikke kunne skrive Ø (sikkert ÆØÅ noe med språk)-->
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div>
+            <div class="kles-bildebokser"> <img src="Assets/Blue sweater stock.jpg"> <p> En XL genser fra 2007</p> </div>               <!-- MÅ FINNE EN BEDRE MÅTE Å FLYTTE PÅ TING ALLAH-->
+            <br>
+            <br>
+            <div class="kles-bildebokser"> <img src="Assets/Stock shoes.jpg"> <p> Noen fine sko til sommeren</p> </div>
+                <div>
+                    <div class="kles-bildebokser" class="rightB1"> <img src="Assets/jacket stock.jpg"> <p> En <em> stylish</em> vinter, venter deg!</p> </div>
+                    <br>
+                    <br>
+                    <div class="kles-bildebokser" class="rightB2"> <img src="Assets/cap stock.jpg"> <p> Normal caps</p> </div>
+                </div>
+        </div>
+    </body>
+</html>
