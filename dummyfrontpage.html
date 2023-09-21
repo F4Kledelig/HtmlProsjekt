@@ -1,37 +1,83 @@
 <!DOCTYPE html>
 <style>
 header h1 {
-    font-size: 210px;
+    font-size: 110px;
+}
+header {
+    text-align: center;
+    padding: 4px;
+    position: relative;
+}
+.div-text1 {
+    text-align:center;
+    padding-left: 5px;
+    position: relative;
+}
+.midtstill-liste ul {
+    text-align: center;
+    list-style-position:inside;
+}
+.midtstill-liste li {
+    text-align: left;
+    padding-left: 40%;
+    list-style-position: inside;
+}
+.divtext2 {
+    font-size:20px;
+}
+.helpDF {
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.please-work {
+    padding-left: 300px;
+}
+.tmpcss {
+    background-color:greenyellow;
+    font-size:27px;
+    display: inline-block;
 }
 </style>
-<head>
+<header>
     <h1> Kledelig</h1>
+    </header>
     <body>
-        <div>
-            <p> <a href="OmOss.HTML"> link til om oss </a></p>
-            <p> <a href="buy.html"> link til medlemsskap</a></p>
-            <p> <a href="ULeveringsted.HTML"> link til Utleveringssteder </a></p>
-            <p> <a href="Produkt side.html"> link til Alle produkter</a></p>
+        <div class="helpDF">
+            <table>
+                <tr> 
+                    <th width="30%">Bærekraft er en svært viktig del av dagens samfunn, <br> hvordan hjelper Kledeli med dette?</th>
+                    <th width="10%"><a href="kledelig.html"><img src="Assets/TmpBGFull.png" height="70" width="70"></a> </th>
+                    <th width="30%" class="please-work"><a href="buy.html">Registrer deg nå!</a></th>
+                    <th width="10%"><a href="buy.html"><img src="Assets/TmpBGFK.png" height="70" width="70"></a></th>
+                </tr> 
+            </table>
+        </div>
+        <div class="div-text1">
+            <p class="tmpcss"> <a href="Produkt side.html"> <strong>Alle Produkter</strong></a></p>
 
         </div>
         <footer>
-            <div>
+            <div class="div-text1">
               <div>
-                <p>Om oss</p>
-                <ul>
+                <p class="divtext2"><strong>Om oss</strong></p>
+                <ul class="midtstill-liste">
                   <li><a href="kledelig.html">Hvorfor oss</a></li>
                   <li><a href="ULeveringsted.HTML">UT leverings sted</a></li>
                 </ul>
               </div>
               <div>
-                <ul>
+                <ul class="midtstill-liste">
                   <li>Kunde sevice: 21345673</li>
                   <li>Email: kleddelig.hvl@gmail.com</li>
                 </ul>
               </div>
               <div>
-                <p>Nå oss på sosiale medier</p>
-                <ul>
+                <p class="divtext2"><strong>Nå oss på sosiale medier</strong></p>
+                <ul class="midtstill-liste">
                   <li>Facebook</li>
                   <li>Instagram</li>
                   <li>TikTok</li>
