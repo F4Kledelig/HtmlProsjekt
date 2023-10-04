@@ -8,7 +8,13 @@ body {
     justify-content: flex-start;
 }
 .hjem-logo {
+    position: center;
+    cursor: pointer;
+}
+.hjem-logo img {
     position: relative;
+    max-width: 7%;
+    max-height: 7%;
 }
 header {
     text-align: center;
@@ -96,13 +102,6 @@ justify-content: space-between;
 body {
     background-image: url(Assets/TmpBGFull.png);   /* TMP BACKGROUND*/
 }
-    
-
-.hjem-logo {
-                position: relative;
-                max-width: 13%;
-                max-height: 13%;
-}
 
 .helpDF {
     display: flex;
@@ -143,3 +142,40 @@ th, td {
 td.pric{
     color: blue;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  body {                    /* HENTET FRA: https://www.w3schools.com/css/tryit.asp?filename=trycss_template1_float  FREE USE */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
