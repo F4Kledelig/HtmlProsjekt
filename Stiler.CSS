@@ -1,12 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(Assets/TmpBGFull.png);
-    height: 100vh;
+    background: linear-gradient(to bottom, #e6d6c3, #a87660);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
+    background-attachment: fixed;
 }
+
 .hjem-logo {
     position: center;
     cursor: pointer;
@@ -22,8 +25,8 @@ header {
     position: relative;
 }
 header h1 {
-    font-size: 110px;
-    text-shadow: 2px 2px #05c90f; 
+    font-size: 90px;
+    text-shadow: 2px 2px #ffffff; 
 }
 #RightSide {
     display: flex;
@@ -56,7 +59,7 @@ header h1 {
     flex-direction:column;
     margin: 4px;
     padding: 5px;
-    background-image: url(Assets/TmpBGFK.png);
+    background-color: grey;
     border: 1px solid black;
 }
 .kles-bildebokser img, .kles-bildebokser2 img{
@@ -99,10 +102,6 @@ flex-direction:row;
 justify-content: space-between;
 
 }
-body {
-    background-image: url(Assets/TmpBGFull.png);   /* TMP BACKGROUND*/
-}
-
 .helpDF {
     display: flex;
     flex-direction:row;
