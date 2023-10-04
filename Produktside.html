@@ -1,103 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Produkter</title>
+        <title>Produkter</title> <link rel="stylesheet" type="text/css" href="Stiler.CSS">
         <style>
-             body {
-                margin: 0;
-                padding: 0;
-                background-image: url(Assets/TmpBGFull.png);
-                height: 100vh;
-                display: flex;
-                flex-direction: column; 
-                justify-content: flex-start;
-            }
-            .hjem-logo {
-                position: relative;
-            }
-            header {
-                text-align: center;
-                padding: 10px;
-                position: relative;
-            }
-            header h1 {
-                font-size: 110px;
-                text-shadow: 2px 2px #05c90f; 
-            }
-            #RightSide {
-                display: flex;
-                margin-right: 20px;
-                justify-content: flex-end;
-                align-items: center;
-            }
-            .white-box {
-                display: flex; /* Grå boks for søkefeltet. bare for å vise */
-                justify-content: center; 
-                align-items: center; 
-                background-color: rgb(168, 166, 166);
-                border: 1px solid black;
-                width: 100px;
-                height: 35px;
-            }
-            .header-linje {
-                position: absolute;
-                width: 100%;
-                height: 3px;
-                background-color:black;
-                bottom: 0;
-                left: 0;
-            }
-            .kles-bildebokser, .kles-bildebokser2 {
-                position: relative;
-                display: flex;
-                align-items:center;
-                width: 30%;
-                flex-direction:column;
-                margin: 4px;
-                padding: 5px;
-                background-image: url(Assets/TmpBGFK.png);
-                border: 1px solid black;
-            }
-            .kles-bildebokser img, .kles-bildebokser2 img{
-                max-width: 90%;
-                height: auto;  /* for å beholde aspect ration til originalen */
-            }
-            .kles-bildebokser p, .kles-bildebokser2 p {
-                font-size: 16px;
-                margin: 0;
-            }
-            .help1 {
-                display:flex;
-                justify-content:space-between;
-            }
-            .tekst-hjelp {
-                flex: 1;
-                padding-left: 10px;
-                text-shadow: 2px 2px rgb(150, 177, 0)
-            }
-            .div-text1 {
-    text-align:center;
-    padding-left: 5px;
-    position: relative;
-}
-.midtstill-liste ul {
-    text-align: center;
-    list-style-position:inside;
-}
-.midtstill-liste li {
-    text-align: left;
-    padding-left: 40%;
-    list-style-position: inside;
-}
-.divtext2 {
-    font-size:20px;
-}
-.helpDF {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    
-}
         </style>
     </head>
     <body>
@@ -105,7 +10,7 @@
             <header>
                 <div class="header-linje"></div>        <!--En svart linje bare for å skille øvre og nedre del a siden-->
                 <h1><strong>Produkter</strong></h1>
-                <div class="hjem-logo"> <a href="dummyfrontpage.html"> <img src="Assets/kledelif4.png" width="70" height="70" alt="Bilde av byen Bergen"></a></div> <!--hjem logo som en kan trykke på for å komme seg til forsiden-->
+                <div class="hjem-logo"> <a href="dummyfrontpage.html"> <img src="Assets/kledelif4.png"  alt="Bilde av byen Bergen"></a></div> <!--hjem logo som en kan trykke på for å komme seg til forsiden-->
                 <div id="RightSide">
                     <div class="white-box">
                     <h3>Search field</h3>       <!-- (skulle egentlig stå Søkefelt) Av en eller annen grunn skjedde noe som gjorde at jeg ikke kunne skrive Ø (sikkert ÆØÅ noe med språk)-->
