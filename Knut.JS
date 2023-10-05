@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var produktBilde = document.querySelectorAll(".Effekt1");
 
     produktBilde.forEach(function (image) {
-        var originSrc = image.src;
+        var originSrc = "Assets/" + image.alt + ".png";
         var altSrc = "assets/" + image.alt + "Alt.png";
 
         image.addEventListener("mouseover", function () {
