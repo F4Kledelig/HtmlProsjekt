@@ -32,13 +32,15 @@ header {
 }
 header h1 {
     font-size: 90px;
-    text-shadow: 2px 2px #ffffff; 
+    text-shadow: 2px 2px #000000; 
 }
-#RightSide {
-    display: flex;
-    margin-right: 20px;
-    justify-content: flex-end;
-    align-items: center;
+.RightsideSearch {
+    background-color: rgb(231, 231, 231);
+    float: right;
+    margin-right: 5px;
+    margin-top: 3px;
+    padding: 2px;
+    text-align: center;
 }
 .white-box {
     padding: 4px;
@@ -52,6 +54,7 @@ header h1 {
     bottom: 0;
     text-decoration: none;
     color:white;
+    border-radius: 12px;
 }
 .header-linje {
     position: absolute;
@@ -76,10 +79,12 @@ header h1 {
     margin-left: 10%;
     margin-right: 10%;
     justify-content: flex-end;
+    border-radius: 12px;
 }
 .kles-bildebokser img, .kles-bildebokser2 img {
     max-width: 100%;
     height: auto;  /* for å beholde aspect ration til originalen */
+    border-radius: 12px 12px 0 0;
 }
 .kles-bildebokser p, .kles-bildebokser2 p {
     font-size: 16px;
