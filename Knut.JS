@@ -45,3 +45,20 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+// Oopsies, did a bit too much trolling
+document.querySelectorAll('.kles-bildebokser2').forEach(function(box) {
+    const img = box.querySelector('.Effekt2');
+    const gif = box.querySelector('.gif');
+  
+    box.addEventListener('mouseenter', function() {
+      gif.src = img.getAttribute('data-src');
+      gif.style.display = 'block';
+      img.style.display = 'none';
+    });
+  
+    box.addEventListener('mouseleave', function() {
+      gif.src = '';
+      gif.style.display = 'none';
+      img.style.display = 'block';
+    });
+  });
