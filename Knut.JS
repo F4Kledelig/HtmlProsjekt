@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var produktBilde = document.querySelectorAll(".Effekt1");
 
     produktBilde.forEach(function (image) {
-        var originSrc = "Assets/" + image.alt + ".png";
+        var originSrc = "Assets/" + image.alt + ".png";         /* Eksempel:  Assets/ + capsdalle + .png   = Assets/capsdalle.png */ 
         var altSrc = "assets/" + image.alt + "Alt.png";
 
         image.style.transition = "0.5s"; // Add a 0.5s transition to the image
