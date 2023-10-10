@@ -1,4 +1,4 @@
-// BildeRotasjon JS
+// BildeEndring Hover JS
 document.addEventListener("DOMContentLoaded", function () {
     var produktBilde = document.querySelectorAll(".Effekt1");
 
