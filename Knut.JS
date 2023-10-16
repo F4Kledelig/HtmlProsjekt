@@ -62,3 +62,11 @@ document.querySelectorAll('.kles-bildebokser2').forEach(function(box) {
       img.style.display = 'block';
     });
   });
+// Alle bilder under produkter klikkbar til Abonner.html
+const images = document.querySelectorAll('.kles-bildebokser2 img');
+images.forEach(img => {
+    const anchor = document.createElement('a');
+    anchor.href = 'Abonner.html';
+    img.parentNode.insertBefore(anchor, img);
+    anchor.appendChild(img);
+});
