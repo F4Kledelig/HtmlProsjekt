@@ -13,6 +13,112 @@
 	  <h1>Kledeli informasjon</h1>
 	  </header>
 	<body>
+	<div class="navbar">
+		<div class="menu-icon">
+			<div class="bar"></div>
+			<div class="bar"></div>
+			<div class="bar"></div>
+		</div>
+		<ul class="menu">
+			<li><a href="#">Hjem</a></li>
+			<li><a href="#">tjenester</a></li>
+			<li><a href="#">Om Oss</a></li>
+			<li><a href="#">Kontakt</a></li>
+		</ul>
+	</div>
+	<style>
+	/* Hovedstil for hamburgermenyen */
+	.menu-icon {
+		display: none; /* Skjul hamburgerikonet som standard */
+		cursor: pointer;
+	}
+
+	/* Stil for hamburger-ikonlinjene */
+	.bar {
+		width: 30px;
+		height: 3px;
+		background-color: #333;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
+
+	/* Stil for menyelementene */
+	.menu {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+	}
+
+	.menu li {
+		float: left;
+	}	
+
+	.menu li a {
+		display: block;
+		padding: 15px 20px;
+		text-align: center;
+		text-decoration: none;
+		color: #333;
+	}
+
+	/* Responsivitet - vis hamburgerikonet på små skjermer */
+	@media screen and (max-width: 600px) {
+		.menu {
+			display: none; /* Skjul menyelementene på små skjermer */
+	}
+
+		.menu-icon {
+			display: block; /* Vis hamburgerikonet på små skjermer */
+	}
+	}
+	/* stilark.css */
+	#nettsideListe {
+		display: none; /* Skjul listen som standard */
+		list-style-type: none;
+		padding: 0;
+	}
+
+	#nettsideListe li {
+		margin: 5px 0;
+	}	
+
+	#visListe {
+		cursor: pointer;
+	}
+
+	</style>
+	
+	<script>
+	// Hent hamburgerikonet og menyelementene //
+	const menuIcon = document.querySelector(".menu-icon");
+	const menu = document.querySelector(".menu");
+
+	// Lytt etter klikk på hamburgerikonet
+	menuIcon.addEventListener("click", () => {
+		menu.classList.toggle("active");
+	});
+	// script.js
+	const knapp = document.getElementById("visListe");
+	const liste = document.getElementById("nettsideListe");
+
+	knapp.addEventListener("click", function() {
+		if (liste.style.display === "none" || liste.style.display === "") {
+			liste.style.display = "block"; // Vis listen når knappen klikkes
+		} else {
+			liste.style.display = "none"; // Skjul listen hvis den allerede er synlig
+		}
+	});
+	<button id="visListe">Velg nettside</button>
+    <ul id="nettsideListe">
+        <li><a href="https://www.nettside1.com">Nettside 1</a></li>
+        <li><a href="https://www.nettside2.com">Nettside 2</a></li>
+        <li><a href="https://www.nettside3.com">Nettside 3</a></li>
+    </ul>
+    <script src="script.js"></script>
+
+
+	</script>
 <div class="div-text1">
 	<p class="TextBokser">KledeliInfo er et firma som leier ut klær med hensikt å redusere klær som blir kastet og ikke blir tatt i bruk. Hos oss tilbyr vi månedlig betalling for å leie klær.
 	Rettet til å kunne oppfylle trang til engangs bruk eller lengre bruk av klær. Dette er for dere som ønsker å redusere klær som blir kjøpt og kastet kort tid etter. Eller
