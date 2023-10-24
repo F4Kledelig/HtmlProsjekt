@@ -10,115 +10,112 @@
 		<div class="hjem-logo">
 		  <a href="Hjemmeside.html"><img src="Assets/kledelif4.png" alt="lmao"></a>
 	  </div>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	.navbar {
+	overflow: hidden;
+	background-color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+	
+	.dropdown {
+	float: left;
+	overflow: hidden;
+	}
+	
+	.dropdown .dropbtn {
+	cursor: pointer;
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	}
+	
+	.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+	background-color: red;
+	}
+	
+	.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	}
+
+	.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	background-color: #ddd;
+	}
+
+	.show {
+	display: block;
+	}
+	</style>
+	</head>
+	<body style="background-color:white;">
+
+	<div class="navbar">
+	<div class="dropdown">
+	<button class="dropbtn" onclick="myFunction()">Dropdown
+		<i class="fa fa-caret-down"></i>
+	</button>
+	<div class="dropdown-content" id="myDropdown">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+		</div>
+		</div> 
+	</div>
+
+	<script>
+	//Når bruker trykker på knappen,
+	toggle mellom gjemt og visende dropdown innhold
+	function myFunction() {
+	document.getElementById("myDropdown").classList.toggle("show");
+	}
+
+	// Lukk dropdown hvis brukeren trykker uttenfor menyen
+	window.onclick = function(e) {
+	if (!e.target.matches('.dropbtn')) {
+	var myDropdown = document.getElementById("myDropdown");
+		if (myDropdown.classList.contains('show')) {
+			myDropdown.classList.remove('show');
+			}
+		}
+	}
+	</script>
+	</body>
+
+	
 	  <h1>Kledeli informasjon</h1>
 	  </header>
+	  
 	<body>
-	<div class="navbar">
-		<div class="menu-icon">
-			<div class="bar"></div>
-			<div class="bar"></div>
-			<div class="bar"></div>
-		</div>
-		<ul class="menu">
-			<li><a href="#">Hjem</a></li>
-			<li><a href="#">tjenester</a></li>
-			<li><a href="#">Om Oss</a></li>
-			<li><a href="#">Kontakt</a></li>
-		</ul>
-	</div>
-	<style>
-	/* Hovedstil for hamburgermenyen */
-	.menu-icon {
-		display: none; /* Skjul hamburgerikonet som standard */
-		cursor: pointer;
-	}
-
-	/* Stil for hamburger-ikonlinjene */
-	.bar {
-		width: 30px;
-		height: 3px;
-		background-color: #333;
-		margin: 6px 0;
-		transition: 0.4s;
-	}
-
-	/* Stil for menyelementene */
-	.menu {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-	}
-
-	.menu li {
-		float: left;
-	}	
-
-	.menu li a {
-		display: block;
-		padding: 15px 20px;
-		text-align: center;
-		text-decoration: none;
-		color: #333;
-	}
-
-	/* Responsivitet - vis hamburgerikonet på små skjermer */
-	@media screen and (max-width: 600px) {
-		.menu {
-			display: none; /* Skjul menyelementene på små skjermer */
-	}
-
-		.menu-icon {
-			display: block; /* Vis hamburgerikonet på små skjermer */
-	}
-	}
-	/* stilark.css */
-	#nettsideListe {
-		display: none; /* Skjul listen som standard */
-		list-style-type: none;
-		padding: 0;
-	}
-
-	#nettsideListe li {
-		margin: 5px 0;
-	}	
-
-	#visListe {
-		cursor: pointer;
-	}
-
-	</style>
 	
-	<script>
-	// Hent hamburgerikonet og menyelementene //
-	const menuIcon = document.querySelector(".menu-icon");
-	const menu = document.querySelector(".menu");
-
-	// Lytt etter klikk på hamburgerikonet
-	menuIcon.addEventListener("click", () => {
-		menu.classList.toggle("active");
-	});
-	// script.js
-	const knapp = document.getElementById("visListe");
-	const liste = document.getElementById("nettsideListe");
-
-	knapp.addEventListener("click", function() {
-		if (liste.style.display === "none" || liste.style.display === "") {
-			liste.style.display = "block"; // Vis listen når knappen klikkes
-		} else {
-			liste.style.display = "none"; // Skjul listen hvis den allerede er synlig
-		}
-	});
-	<button id="visListe">Velg nettside</button>
-    <ul id="nettsideListe">
-        <li><a href="https://www.nettside1.com">Nettside 1</a></li>
-        <li><a href="https://www.nettside2.com">Nettside 2</a></li>
-        <li><a href="https://www.nettside3.com">Nettside 3</a></li>
-    </ul>
-    <script src="script.js"></script>
-
-
-	</script>
 <div class="div-text1">
 	<p class="TextBokser">KledeliInfo er et firma som leier ut klær med hensikt å redusere klær som blir kastet og ikke blir tatt i bruk. Hos oss tilbyr vi månedlig betalling for å leie klær.
 	Rettet til å kunne oppfylle trang til engangs bruk eller lengre bruk av klær. Dette er for dere som ønsker å redusere klær som blir kjøpt og kastet kort tid etter. Eller
