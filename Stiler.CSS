@@ -23,16 +23,96 @@ body h2 {
     font-weight: 700;
 }
 
-.hjem-logo {        /* Endret så logoen er sticky denne til sticky, og under til fixed */
-    position: sticky;
-    top: 0;
-    cursor: pointer;
-    z-index: 100;
+.hjem-logo {
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: white;
 }
-.hjem-logo img {
-    position: fixed;
-    max-width: 7%;
-    max-height: 7%;
+
+.logo-center {
+	text-align: center;
+	margin-left: 780px; /* Juster venstre margen etter behov */
+	margin-right: 780px; /* Juster høyre margen etter behov */
+	flex: 1;
+}
+
+.logo-center img {
+  max-width: 50px; /* Angi en maks bredde etter behov */
+  max-height: 50px; /* Angi en maks høyde etter behov */
+}
+
+.navbar {
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  position: sticky;
+}
+
+.dropdown {
+  overflow: hidden;
+  magrin-left: 20px;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: blue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }
 header {
     text-align: center;
