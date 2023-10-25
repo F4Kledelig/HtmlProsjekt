@@ -270,24 +270,29 @@ td.pric{
 }
 .abonnering-type{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     border: 1px solid #ffffff;
     border-radius: 30px;
     padding: 30px;
     margin-bottom: 5px;
-    transition: backround-color 0.3s ease, box-shadow 0.3 ease;
-    max-width: 700px;
+    transition: background-color 0.3s ease, box-shadow 0.3 ease;
+    max-width: 900px;
     width: 100%;
+    color: black;
+    cursor: pointer;      
+    
   }
 
 .abonnering-type:hover{
-    
-    box-shadow: 0 4px 10px rgb(0, 0,0.1);     
+    box-shadow: 0 4px 10px rgb(0, 0, 0);     
   }
 
 .abonnering-type h3{
     margin-top: 0;
+    order: -1;
   }
 
 .pris {
