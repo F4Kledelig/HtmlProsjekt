@@ -70,3 +70,25 @@ images.forEach(img => {
     img.parentNode.insertBefore(anchor, img);
     anchor.appendChild(img);
 });
+
+// Dropdown meny
+// Når bruker trykker på knappen,
+// toggle mellom gjemt og visende dropdown innhold
+function myFunction() {
+  var dropdown = document.getElementById("myDropdown");
+  if (dropdown.style.display === "block") {
+    dropdown.style.display = "none";
+  } else {
+    dropdown.style.display = "block";
+  }
+}
+
+// Lukk dropdown hvis brukeren trykker utenfor menyen
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn')) {
+    var dropdown = document.getElementById("myDropdown");
+    if (dropdown.style.display === "block") {
+      dropdown.style.display = "none";
+    }
+  }
+}
