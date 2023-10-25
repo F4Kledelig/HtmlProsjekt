@@ -93,47 +93,26 @@ window.onclick = function (e) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Velger alle elementer med klassen "abonnering-type" og legger dem i AbonneringDivs.
-  var AbonneringDivs = document.querySelectorAll(".abonnering-type");
 
-  AbonneringDivs.forEach(function (div) {
-    // Mouseover: Hendelseslytter som endrer tekstfargen til blå når musepekeren svever over elementet.
-    div.addEventListener("mouseover", function () {
-      div.style.color = "blue";
-    });
-
-    // Mouseout: Hendelseslytter som gjenoppretter tekstfargen til svart når musepekeren forlater elementet.
-    div.addEventListener("mouseout", function () {
-      div.style.color = "black";
-    });
-
-    // Click: Hendelseslytter som henter mål-URLen fra "data-link"-attributtet og navigerer til den når elementet klikkes.
-    div.addEventListener("click", function () {
-      var targetURL = div.getAttribute("data-link");
-      window.location.href = targetURL;
-    });
-  });
-});
 
 //lytter etter DOMContentLoaded, sikkrer at koden kjører etter at siden har fullstendig lastet 
-//document.addEventListener("DOMContentLoaded",function(){
+document.addEventListener("DOMContentLoaded",function(){
    //velger alle elemnter med klassen"abonnering-type"og legger dem i abonneringdivs.
-  //var AbonneringDivs = document.querySelectorAll(".abonnering-type");
+  var AbonneringDivs = document.querySelectorAll(".abonnering-type");
 
-  //AbonneringDivs.forEach(function(div){
+  AbonneringDivs.forEach(function(div){
     //mousover, hendelselyter som endrer tekst fargen til blå når musepekeren svever over elemntet.
-    //div.addEventListener("mouseover",function(){
-      //div.style.color= "blue";
-    //})
+    div.addEventListener("mouseover",function(){
+      div.style.color= "blue";
+    })
     //mousout,hendelselyter som gjennomretter tekstfargen til svart musepekeren forlater elementet.
-    //div.addEventListener("mouseout", function(){
-      //div.style.color = "black";
-    //})
+    div.addEventListener("mouseout", function(){
+      div.style.color = "black";
+    })
     // click,hendelselyter som henter mål URLen fra "data-link"  i attributtet og navigere til den når elemente klikkes.  
-    //div.addEventListener("click",function(){
-      //var targetURL = div.getAttribute("data-link");
-      //window.location.href = targetURL;
-    //})
- // })
-//})
+    div.addEventListener("click",function(){
+      var targetURL = div.getAttribute("data-link");
+      window.location.href = targetURL;
+    })
+ })
+})
