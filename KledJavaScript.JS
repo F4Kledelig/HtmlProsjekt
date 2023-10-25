@@ -92,3 +92,12 @@ window.onclick = function (e) {
     }
   }
 }
+// UNIVERSAL FOOTER OG HEADER
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('headerU.html')
+    .then(response => response.text())
+    .then(data => {
+      console.log("Fetched header: ", data);  // Log fetched data
+      document.getElementById('headerU').innerHTML = data;
+    });
+});
