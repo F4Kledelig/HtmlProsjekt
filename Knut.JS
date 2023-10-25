@@ -93,7 +93,7 @@ window.onclick = function (e) {
   }
 }
 
-//
+
 document.addEventListener("DOMContentLoaded",function(){
    //velger alle elemnter med klassen"abonnering-type"og legger dem i abonneringdivs.
   var AbonneringDivs = document.querySelectorAll(".abonnering-type");
