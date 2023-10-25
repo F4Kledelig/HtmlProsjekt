@@ -86,8 +86,8 @@ header h1 {
     flex-direction:column;
     margin: 0px;
     padding: 0px;
-    background: linear-gradient(to bottom, #92ec80, #83b676);
-    border: 3px solid rgb(77, 35, 1);
+    background: linear-gradient(to bottom, #ffffff79, #8eff7171);
+    border: 3px solid rgba(53, 8, 255, 0.308);
     margin-top: 20px;
     margin-left: 10%;
     margin-right: 10%;
@@ -213,7 +213,7 @@ td.pric{
 .pris {
     margin: 0;
   }
-  .TextBokser {             /* Generell boks til texter, må endres. ser sjtøgg ut no */
+  .TextBokser {             /* Generell boks til texter, må endres. ser sjtøgg ut no    216 */
     position: relative;
     display: flex;
     align-items:center;
@@ -222,10 +222,67 @@ td.pric{
     flex-direction:column;
     margin: 0px;
     padding: 5px;
-    background-color: rgba(250, 149, 191, 0.185);
+    background: linear-gradient(to bottom, #ffffff79, #8eff7171);
     border: 2px solid black;
     margin-top: 20px;
     margin: 0 auto;
     justify-content: center;
     border-radius: 12px;
 }
+.Registrering-boks {    /* Boks for registreringsside 232 */
+    position: relative;
+    display: flex;
+    align-items:right;
+    width: auto;
+    max-width: 70%;
+    flex-direction:column;
+    margin: 0 auto;
+    padding: 5px;
+    background: linear-gradient(to bottom, #ffffff79, #8eff7171);
+    border: 2px solid black;
+    margin-top: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 12px;
+}
+.input-registrer {  /* Input boks til regisrering 248 */
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+    border-radius: 12px;
+  }
+  .fulførregistrerings-boks {
+    padding: 4px;
+    background: linear-gradient(to bottom, #91bcfd, #3e31eb);
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin-top: 50px;
+    max-width: 20%;
+    height: auto;
+    position: relative;
+    top: 50%; 
+    left: 40%; 
+    text-decoration: none;
+    color: white;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+.fulførregistrerings-boks:hover { /* 257 */
+    background: linear-gradient(to bottom, rgba(135, 252, 151, 0.658), rgba(7, 85, 11, 0.658));
+    transform: scale(1.2);
+}
+.top-bar {
+    background-color: #f77979; /* Hvit i starten */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    z-index: 100;
+  }
