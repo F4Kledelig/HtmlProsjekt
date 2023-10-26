@@ -290,7 +290,8 @@ td.pric{
     max-width: 900px;
     width: 100%;
     color: rgb(249, 246, 246);
-    cursor: pointer;      
+    cursor: pointer; 
+    background-color: rgba(153, 23, 1, 0.644);     
     
   }
 
