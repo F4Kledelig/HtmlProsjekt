@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded",function(){
     })
     //mousout,hendelselyter som gjennomretter tekstfargen til svart musepekeren forlater elementet.
     div.addEventListener("mouseout", function(){
-      div.style.color = "black";
+      div.style.color = "white";
     })
     // click,hendelselyter som henter mål URLen fra "data-link"  i attributtet og navigere til den når elemente klikkes.  
     div.addEventListener("click",function(){

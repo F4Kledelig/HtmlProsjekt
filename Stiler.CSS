@@ -289,7 +289,7 @@ td.pric{
     transition: background-color 0.3s ease, box-shadow 0.3 ease;
     max-width: 900px;
     width: 100%;
-    color: black;
+    color: rgb(249, 246, 246);
     cursor: pointer;      
     
   }
