@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
     <head> <link rel="stylesheet" type="text/css" href="Stiler.CSS">
+		<meta charset="UTF-8">
 		<style>
 		</style>
 		<title>Registrering</title>
 	</head>
-    <header>
-		<div class="navbar">
-			<div class="dropdown">
-			  <button class="dropbtn" onclick="myFunction()">Dropdown
-				<i class="fa fa-caret-down"></i>
-			  </button>
-			  <div class="dropdown-content" id="myDropdown">
-				<a href="Produkter.html">Produkter</a>
-				<a href="kledeliInfo.html">Om oss</a>
-				<a href="UtLeveringsSteder.HTML">Utleverings steder</a>
-				<a href="Registrering.html">Registrering</a>
-				<a href="Abonner.html">Medlemskap</a>
-			  </div>
-			</div>
-			<div class="logo-center">
-			  <a href="Hjemmeside.html"><img src="Assets/kledelif4.png" alt="lmao"></a>
-			</div>
-		  </div>
-	  <h1>Registrer deg</h1>
-	  </header>
       <body>
+		<header>
+			<div class="navbar">
+				<div class="dropdown">
+				  <button class="dropbtn" onclick="myFunction()">Dropdown
+					<i class="fa fa-caret-down"></i>
+				  </button>
+				  <div class="dropdown-content" id="myDropdown">
+					<a href="Produkter.html">Produkter</a>
+					<a href="kledeliInfo.html">Om oss</a>
+					<a href="UtLeveringsSteder.HTML">Utleverings steder</a>
+					<a href="Registrering.html">Registrering</a>
+					<a href="Abonner.html">Medlemskap</a>
+				  </div>
+				</div>
+				<div class="logo-center">
+				  <a href="Hjemmeside.html"><img src="Assets/kledelif4.png" alt="lmao"></a>
+				</div>
+			  </div>
+		  <h1>Registrer deg</h1>
+		  </header>
     <div class="Registrering-boks">
         <p>Fullt Navn: <input type="text" class="input-registrer" placeholder="Fornavn, etternavn"> </p>
         <p>E-post: <input type="text" class="input-registrer" placeholder="example@gmail.com"> </p>  
@@ -35,7 +36,7 @@
         <p>Gjennta Passord: <input type="text" class="input-registrer" placeholder=""></p>
         <p>Telefon: <input type="text" class="input-registrer" placeholder="+47"></p>
     </div>
-    <button class="fulførregistrerings-boks"><a href="Produkter.html"><p>Fullfør Registrering</p></a></button>
+    <button class="fulførregistrerings-boks" onclick="location.href='Produkter.html'" ><span>Fullfør Registrering</span></button>
     <script src="KledJavaScript.JS"></script>
     <div>
         <footer>

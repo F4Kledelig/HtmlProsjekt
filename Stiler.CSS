@@ -381,3 +381,7 @@ td.pric{
     position: sticky;
     z-index: 100;
   }
+  .fulførregistrerings-boks span {
+    line-height: 3;
+    font-weight: 750;
+  }
