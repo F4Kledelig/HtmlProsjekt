@@ -11,15 +11,13 @@ body {
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 1.2px;
-    color: rgb(245, 217, 128);
+    color: rgb(0, 0, 0);
     -webkit-text-stroke: 0.75px rgb(0, 0, 0);
     
 }
 body p {
     line-height: 1.5;
     font-weight: 750;
-    
-
 }
 body h2 {
     font-size: 30px;
@@ -217,7 +215,7 @@ padding-left: 5px;
 position: relative;
 color: rgb(0, 0, 0);
 font-size: 20px;
-text-shadow: 2px rgb(255, 255, 255);
+text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 .midtstill-liste ul {
 text-align: center;
@@ -230,7 +228,7 @@ list-style-position: inside;
 }
 .divtext2 {
 font-size:25px;
-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);
 }
 .helpDF {
 display: flex;
